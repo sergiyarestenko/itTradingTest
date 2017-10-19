@@ -1,0 +1,185 @@
+.banner {
+  background: url('../img/header_bg.png') no-repeat 50% 0;
+  background-size: cover;
+  flex-direction: column;
+  position: relative;
+  &-img {
+    background: url('../img/computers.png') no-repeat 100% 50%;
+    background-size: contain;
+    height: 360px;
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 685px;
+  }
+
+  .gradient-other {
+    background: linear-gradient(to right, $red-start, $red-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-ie {
+    color: $red-start;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: $font-size-banner;
+      font-weight: 300;
+      padding: 10px 0 10px 50px;
+      position: relative;
+
+      &::before {
+        content: url('../img/check_mark.png');
+        left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-35%);
+      }
+    }
+  }
+  form {
+    width: 480px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    input[type = 'text'],
+    input[type = 'password'] {
+      border: 2px solid $grey-font;
+      border-radius: 50px;
+      padding: 10px 15px;
+      width: 100%;
+      font-size: $font-size-banner;
+      color: $grey-font;
+      &::-webkit-input-placeholder {
+         color: $grey-font;
+       }
+      &:-ms-input-placeholder {
+         color: $grey-font;
+       }
+      &::-ms-input-placeholder {
+         color: $grey-font;
+       }
+      &::placeholder {
+         color: $grey-font;
+       }
+    }
+    .subscribe-btn {
+      font-size: $font-size-banner;
+      &:hover {
+        opacity: .85;
+        box-shadow: 0 0 5px black;
+      }
+    }
+    p {
+      font-size: $font-size-smaller;
+      font-weight: 600;
+      span {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:1399px){
+  .banner {
+    &-img {
+      right: 90px;
+    }
+  }
+}
+@media screen and (max-width:1359px){
+  .banner {
+    &-img {
+    height: 280px;
+    }
+  }
+}
+@media screen and (max-width:1199px){
+  .banner {
+    &-img {
+      right: 60px;
+    }
+    ul{
+      li{
+        font-size:$font-size-banner-md;
+        padding: 8px 0 8px 40px;
+      }
+    }
+    form{
+      width: 40%;
+  input[type = 'text'],
+  input[type = 'password'] {
+      font-size:$font-size-banner-md;
+
+  }
+    }
+      .subscribe-btn {
+          font-size:$font-size-banner-md;
+      }
+
+  }
+
+}
+@media screen and (max-width:991px){
+  .banner {
+    &-img {
+      right: 30px;
+      height: 180px;
+      width: 100%;
+
+    }
+    .subscribe-btn {
+        font-size:$font-size-banner-md;
+    }
+  }
+}
+@media screen and (max-width:767px){
+
+    .banner {
+      h1{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size:30px;
+      }
+      ul{
+        margin-left: auto;
+        margin-right: auto;
+        li{
+          font-size:$font-size-prime;
+        }
+      }
+      &-img {
+        display: none;
+
+      }
+        form{
+          width: auto;
+        }
+    }
+  }
+
+@media screen and (max-width:600px){
+  .banner {
+
+
+  }
+}
+@media screen and (max-width:400px){
+  .banner {
+
+  }
+}

@@ -1,0 +1,76 @@
+.credo-trade {
+  background: url('../img/black_bg.png') no-repeat 50% 0;
+  background-size: cover;
+  color: $white;
+  flex-direction: column;
+  text-align: center;
+  &-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  &-inner {
+    flex-direction: column;
+    margin-bottom: 25px;
+    padding: 100px 60px 0 60px;
+
+    &:nth-child(1) {
+        background: url('../img/red_icon_1.png') no-repeat 50% 0;
+    }
+    &:nth-child(2) {
+        background: url('../img/red_icon_2.png') no-repeat 50% 0;
+        border: 1px solid $white;
+        border-width: 0 1px 0 1px;
+    }
+    &:nth-child(3) {
+        background: url('../img/red_icon_3.png') no-repeat 50% 0;
+    }
+    p {
+      font-size: $font-size-option;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width:1660px){
+
+}
+@media screen and (max-width:1399px){
+
+}
+@media screen and (max-width:1199px){
+.credo-trade{
+  &-inner {
+    padding: 100px 30px 0 30px;
+
+  }
+}
+}
+@media screen and (max-width:991px){
+  .credo-trade{
+    &-inner {
+      padding: 100px 15px 0 15px;
+
+    }
+  }
+}
+@media screen and (max-width:767px){
+  .credo-trade{
+    padding: 0 90px;
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-inner {
+        border: none !important;
+        h3{
+          margin: .5em auto;
+        }
+    }
+  }
+}
+@media screen and (max-width:600px){
+  .credo-trade{
+    padding: 0 30px;
+
+
+  }
+}

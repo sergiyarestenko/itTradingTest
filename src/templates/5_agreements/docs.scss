@@ -1,0 +1,32 @@
+.docs{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  min-height:100%;
+  z-index: 10;
+  background: rgba(0,0,0,.25);
+  overflow-y: visible;
+  .container{
+  margin-bottom: 25px;
+  margin-top: 25px;
+    background: $white;
+    box-shadow: 2px 2px 5px black;
+  }
+  &-inner{
+      flex-direction: column;
+
+      padding: 50px;
+      font-size:$font-size-option;
+      font-weight: 300;
+      h2{
+        font-size: 30px;
+
+      }
+  }
+  &-button-holder{
+    justify-content: center;
+  }
+
+}

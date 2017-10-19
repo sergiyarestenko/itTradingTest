@@ -1,4 +1,40 @@
+@media screen and (max-width:1660px){
+.container {
+  width: 100%;
+}
+}
+@media screen and (max-width:1399px){
+.col-padding {
+  padding: 0 90px;
+}
+}
 @media screen and (max-width:1199px){
+.col-padding {
+  padding: 0 60px;
+}
+h1,
+h2 {
+  font-size: $font-size-header-md;
+}
+h3{
+    font-size: $font-size-header-small-md;
+}
+}
+@media screen and (max-width:991px){
+.col-padding {
+  padding: 0 30px;
+}
 
-
+.subscribe-btn {
+  padding: 10px 20px;
+}
+}
+@media screen and (max-width:767px){
+.col-padding {
+  padding: 0 15px;
+}
+h1,
+h2 {
+  font-size: $font-size-header-xs;
+}
 }

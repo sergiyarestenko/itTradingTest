@@ -1,15 +1,103 @@
-html,body{
-  font-size: $font-size-prime;
+html,
+body {
   background: $white;
+  color: $grey-font;
   font-family: $font-family-main;
+  font-size: $font-size-prime;
+  font-weight: 600;
   z-index: 1;
 }
-body{
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+div,
+section,
+header,
+footer,
+form {
+  display: flex;
+}
+
+h1,
+h2 {
+  font-size: $font-size-header;
 
 }
-h1,h2{
-  font-size:$font-size-header;
-}
-h3{
-   font-size:$font-size-header-small;
+
+h3 {
+  font-size: $font-size-header-small;
  }
+
+h1 {
+  line-height: 1.15em;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+
+h1,
+h3 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+  margin: 25px auto 30px auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 1640px;
+  flex-direction: column;
+}
+
+.col-padding {
+  padding: 0 120px;
+}
+.input-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 80%;
+  justify-content: center;
+  span {
+    font-size: $font-size-smaller;
+    color: $red-start;
+    position: absolute;
+    right: 15px;
+    top:-20px;
+    font-weight: 300;
+    transition: .5s;
+  }
+  &.incorrect {
+    span {
+      top:10px;
+    }
+  }
+}
+.subscribe-btn {
+  background: #a51740;
+  background: -moz-linear-gradient(top, #a51740 0%, #af0010 100%);
+  background: -webkit-linear-gradient(top, #a51740 0%,#af0010 100%);
+  background: linear-gradient(to bottom, #a51740 0%,#af0010 100%);
+  color: $white;
+  border: none;
+  border-radius: 50px;
+  width: auto;
+  padding: 15px 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .15s;
+
+
+}
